@@ -13,37 +13,70 @@
         <div class="logo">Cristofer.dev</div>
 
         <nav class="menu">
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="portfolio.html">Portfólio</a>
-            <a href="novidades.html">Novidades</a>
-            <a href="contato.html">Contato</a>
+            <a href="index.html" data-pt="Início" data-en="Home">Início</a>
+            <a href="sobre.html" data-pt="Sobre" data-en="About">Sobre</a>
+            <a href="portfolio.html" data-pt="Portfólio" data-en="Portfolio">Portfólio</a>
+            <a href="novidades.html" data-pt="Novidades" data-en="News">Novidades</a>
+            <a href="contato.html" data-pt="Contato" data-en="Contact">Contato</a>
         </nav>
+
+        <div class="top-controls">
+            <div class="language-switch">
+                <button onclick="setLanguage('pt')">PT-BR</button>
+                <button onclick="setLanguage('en')">EN</button>
+            </div>
+
+            <div class="theme-switch">
+                <button onclick="setTheme('light')" data-pt="Claro" data-en="Light">Claro</button>
+                <button onclick="setTheme('dark')" data-pt="Escuro" data-en="Dark">Escuro</button>
+            </div>
+        </div>
     </header>
 
     <div class="container">
 
-        <h1 class="titulo">Contato</h1>
+        <h1 class="titulo" data-pt="Contato" data-en="Contact">Contato</h1>
 
-        <p class="descricao">
+        <p class="descricao"
+           data-pt="Nesta página você pode entrar em contato comigo e acessar minhas redes sociais."
+           data-en="On this page you can contact me and access my social media profiles.">
             Nesta página você pode entrar em contato comigo e acessar minhas redes sociais.
         </p>
 
         <div class="curriculo">
             <div class="card">
-                <h3>Redes Sociais</h3>
-                <p><strong>Instagram:  <a href="https://www.instagram.com/cristoferdmello_?igsh=MTZlbHJqY3hmcTYzZg%3D%3D&utm_source=qr">https://www.instagram.com/cristoferdmello</a></strong> </p>
-                <p><strong>GitHub: <a href="https://github.com/CristoferDuarte">https://github.com/CristoferDuarte</a></strong> </p>
-                <p><strong>LinkedIn: <a href="https://www.linkedin.com/in/cristofer-duarte-8631233a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">https://www.linkedin.com/in/cristofer-duarte</a></strong> </p>
+                <h3 data-pt="Redes Sociais" data-en="Social Media">Redes Sociais</h3>
+
+                <p>
+                    <strong data-pt="Instagram:" data-en="Instagram:">Instagram:</strong>
+                    <a href="https://www.instagram.com/cristoferdmello_?igsh=MTZlbHJqY3hmcTYzZg%3D%3D&utm_source=qr" target="_blank">
+                        https://www.instagram.com/cristoferdmello
+                    </a>
+                </p>
+
+                <p>
+                    <strong data-pt="GitHub:" data-en="GitHub:">GitHub:</strong>
+                    <a href="https://github.com/CristoferDuarte" target="_blank">
+                        https://github.com/CristoferDuarte
+                    </a>
+                </p>
+
+                <p>
+                    <strong data-pt="LinkedIn:" data-en="LinkedIn:">LinkedIn:</strong>
+                    <a href="https://www.linkedin.com/in/cristofer-duarte-8631233a8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                        https://www.linkedin.com/in/cristofer-duarte
+                    </a>
+                </p>
             </div>
         </div>
 
     </div>
 
-    <footer>
+    <footer data-pt="© 2026 - CristoferDuarte" data-en="© 2026 - CristoferDuarte">
         © 2026 - CristoferDuarte
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

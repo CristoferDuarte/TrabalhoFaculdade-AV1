@@ -13,42 +13,59 @@
         <div class="logo">Cristofer.dev</div>
 
         <nav class="menu">
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="portfolio.html">Portfólio</a>
-            <a href="novidades.html">Novidades</a>
-            <a href="contato.html">Contato</a>
+            <a href="index.html" data-pt="Início" data-en="Home">Início</a>
+            <a href="sobre.html" data-pt="Sobre" data-en="About">Sobre</a>
+            <a href="portfolio.html" data-pt="Portfólio" data-en="Portfolio">Portfólio</a>
+            <a href="novidades.html" data-pt="Novidades" data-en="News">Novidades</a>
+            <a href="contato.html" data-pt="Contato" data-en="Contact">Contato</a>
         </nav>
+
+        <div class="top-controls">
+            <div class="language-switch">
+                <button onclick="setLanguage('pt')">PT-BR</button>
+                <button onclick="setLanguage('en')">EN</button>
+            </div>
+
+            <div class="theme-switch">
+                <button onclick="setTheme('light')" data-pt="Claro" data-en="Light">Claro</button>
+                <button onclick="setTheme('dark')" data-pt="Escuro" data-en="Dark">Escuro</button>
+            </div>
+        </div>
     </header>
 
     <div class="container">
 
-        <h1 class="titulo">Novidades</h1>
+        <h1 class="titulo" data-pt="Novidades" data-en="News">Novidades</h1>
 
-        <p class="descricao">
+        <p class="descricao"
+           data-pt="Aqui compartilho atualizações sobre meus estudos, projetos e evolução na área de tecnologia."
+           data-en="Here I share updates about my studies, projects, and growth in the technology field.">
             Aqui compartilho atualizações sobre meus estudos, projetos e evolução na área de tecnologia.
         </p>
 
         <div class="curriculo">
             <div class="card">
-                <h3>Evolução nos Estudos</h3>
-                <p>
+                <h3 data-pt="Evolução nos Estudos" data-en="Study Progress">Evolução nos Estudos</h3>
+                <p data-pt="Tenho aprofundado meus conhecimentos em desenvolvimento web, lógica de programação e estruturação de projetos."
+                   data-en="I have been deepening my knowledge in web development, programming logic, and project structuring.">
                     Tenho aprofundado meus conhecimentos em desenvolvimento web,
                     lógica de programação e estruturação de projetos.
                 </p>
             </div>
 
             <div class="card">
-                <h3>Novas Tecnologias</h3>
-                <p>
+                <h3 data-pt="Novas Tecnologias" data-en="New Technologies">Novas Tecnologias</h3>
+                <p data-pt="Estou estudando React Native e Node.js para ampliar minha base tanto no desenvolvimento mobile quanto no back-end."
+                   data-en="I am studying React Native and Node.js to expand my foundation in both mobile development and back-end development.">
                     Estou estudando React Native e Node.js para ampliar minha base
                     tanto no desenvolvimento mobile quanto no back-end.
                 </p>
             </div>
 
             <div class="card">
-                <h3>Próximos Passos</h3>
-                <p>
+                <h3 data-pt="Próximos Passos" data-en="Next Steps">Próximos Passos</h3>
+                <p data-pt="Meu objetivo é continuar desenvolvendo projetos práticos, melhorar meu portfólio e adquirir cada vez mais experiência."
+                   data-en="My goal is to keep developing practical projects, improve my portfolio, and gain more and more experience.">
                     Meu objetivo é continuar desenvolvendo projetos práticos,
                     melhorar meu portfólio e adquirir cada vez mais experiência.
                 </p>
@@ -57,10 +74,11 @@
 
     </div>
 
-    <footer>
+    <footer data-pt="© 2026 - CristoferDuarte" data-en="© 2026 - CristoferDuarte">
         © 2026 - CristoferDuarte
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

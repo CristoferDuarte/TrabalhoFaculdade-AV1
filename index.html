@@ -13,30 +13,46 @@
         <div class="logo">Cristofer.dev</div>
 
         <nav class="menu">
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="portfolio.html">Portfólio</a>
-            <a href="novidades.html">Novidades</a>
-            <a href="contato.html">Contato</a>
+            <a href="index.html" data-pt="Início" data-en="Home">Início</a>
+            <a href="sobre.html" data-pt="Sobre" data-en="About">Sobre</a>
+            <a href="portfolio.html" data-pt="Portfólio" data-en="Portfolio">Portfólio</a>
+            <a href="novidades.html" data-pt="Novidades" data-en="News">Novidades</a>
+            <a href="contato.html" data-pt="Contato" data-en="Contact">Contato</a>
         </nav>
+
+        <div class="top-controls">
+            <div class="language-switch">
+                <button onclick="setLanguage('pt')">PT-BR</button>
+                <button onclick="setLanguage('en')">EN</button>
+            </div>
+
+            <div class="theme-switch">
+                <button onclick="setTheme('light')" data-pt="Claro" data-en="Light">Claro</button>
+                <button onclick="setTheme('dark')" data-pt="Escuro" data-en="Dark">Escuro</button>
+            </div>
+        </div>
     </header>
 
     <div class="container">
 
-        <h1>Bem-vindo ao Meu Currículo</h1>
+        <h1 data-pt="Bem-vindo ao Meu Currículo" data-en="Welcome to My Resume">
+            Bem-vindo ao Meu Currículo
+        </h1>
 
         <div class="perfil">
             <img src="cristofer.jpg" alt="Foto de Cristofer">
 
             <div class="texto-lado">
-                <p>
+                <p data-pt="Olá! Meu nome é <strong>Cristofer</strong> e sou estudante de <strong>Ciência da Computação</strong> na <strong>Universidade Veiga de Almeida (UVA)</strong>, atualmente cursando o primeiro período."
+                   data-en="Hello! My name is <strong>Cristofer</strong> and I am a <strong>Computer Science</strong> student at <strong>Veiga de Almeida University (UVA)</strong>, currently in my first semester.">
                     Olá! Meu nome é <strong>Cristofer</strong> e sou estudante de
                     <strong>Ciência da Computação</strong> na
                     <strong>Universidade Veiga de Almeida (UVA)</strong>,
                     atualmente cursando o primeiro período.
                 </p>
 
-                <p>
+                <p data-pt="Sou apaixonado por tecnologia e tenho grande interesse em desenvolvimento web e mobile, buscando sempre evoluir minhas habilidades na área."
+                   data-en="I am passionate about technology and have a strong interest in web and mobile development, always seeking to improve my skills in the field.">
                     Sou apaixonado por tecnologia e tenho grande interesse em
                     desenvolvimento web e mobile, buscando sempre evoluir minhas
                     habilidades na área.
@@ -45,19 +61,22 @@
         </div>
 
         <div class="texto-baixo">
-            <p>
+            <p data-pt="Atualmente, estou fortalecendo minha base em algoritmos, estrutura de dados e desenvolvimento front-end e back-end, além de desenvolver projetos próprios para adquirir experiência prática e ampliar meu portfólio."
+               data-en="Currently, I am strengthening my foundation in algorithms, data structures, and front-end and back-end development, while also building personal projects to gain practical experience and expand my portfolio.">
                 Atualmente, estou fortalecendo minha base em algoritmos, estrutura
                 de dados e desenvolvimento front-end e back-end, além de desenvolver
                 projetos próprios para adquirir experiência prática e ampliar meu portfólio.
             </p>
 
-            <p>
+            <p data-pt="Meu objetivo é crescer profissionalmente na área de tecnologia, contribuindo com soluções inovadoras, trabalhando em equipe e evoluindo continuamente como desenvolvedor."
+               data-en="My goal is to grow professionally in the technology field, contributing with innovative solutions, working as part of a team, and continuously evolving as a developer.">
                 Meu objetivo é crescer profissionalmente na área de tecnologia,
                 contribuindo com soluções inovadoras, trabalhando em equipe e evoluindo
                 continuamente como desenvolvedor.
             </p>
 
-            <p>
+            <p data-pt="Este site foi desenvolvido para apresentar minhas informações acadêmicas, projetos realizados e formas de contato."
+               data-en="This website was created to present my academic information, completed projects, and contact methods.">
                 Este site foi desenvolvido para apresentar minhas informações acadêmicas,
                 projetos realizados e formas de contato.
             </p>
@@ -65,10 +84,11 @@
 
     </div>
 
-    <footer>
+    <footer data-pt="© 2026 - CristoferDuarte" data-en="© 2026 - CristoferDuarte">
         © 2026 - CristoferDuarte
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

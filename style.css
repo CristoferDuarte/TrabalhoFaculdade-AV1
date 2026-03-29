@@ -2,9 +2,11 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    color: #222;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .header {
@@ -15,6 +17,8 @@ body {
     padding: 15px 40px;
     color: white;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
 .logo {
@@ -23,37 +27,50 @@ body {
     color: #ffffff;
 }
 
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
 .menu a {
     color: white;
     text-decoration: none;
-    margin-left: 25px;
     font-weight: 500;
     position: relative;
-}
-
-.menu a:hover::after {
-    width: 100%;
 }
 
 .menu a:hover {
     color: #8d919e;
 }
 
-nav {
-    background-color: #222;
-    padding: 15px;
-    text-align: center;
+.top-controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
+.language-switch,
+.theme-switch {
+    display: flex;
+    gap: 8px;
+}
+
+.language-switch button,
+.theme-switch button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #ffffff;
+    color: #1e1e1e;
+    border-radius: 6px;
+    cursor: pointer;
     font-weight: bold;
+    transition: 0.3s;
 }
 
-nav a:hover {
-    color: #61606d;
+.language-switch button:hover,
+.theme-switch button:hover {
+    background-color: #dcdcdc;
 }
 
 .container {
@@ -65,6 +82,7 @@ nav a:hover {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex: 1;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 h1 {
@@ -118,6 +136,7 @@ footer {
     display: flex;
     gap: 30px;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .perfil img {
@@ -134,7 +153,6 @@ footer {
     font-size: 20px;
     margin-top: 20px;
 }
-
 
 .titulo {
     font-size: 36px;
@@ -192,4 +210,95 @@ footer {
 
 .butaoProj:hover {
     background-color: #3c3f3f;
+}
+
+/* MODO ESCURO */
+body.dark-mode {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+body.dark-mode .container {
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode h1,
+body.dark-mode .titulo,
+body.dark-mode .card h3,
+body.dark-mode .curriculo h2,
+body.dark-mode .texto-lado,
+body.dark-mode .texto-baixo,
+body.dark-mode p,
+body.dark-mode strong {
+    color: #f1f1f1;
+}
+
+body.dark-mode .descricao {
+    color: #d0d0d0;
+}
+
+body.dark-mode .card {
+    background-color: #2a2a2a;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.03);
+}
+
+body.dark-mode .butaoProj {
+    background-color: #f1f1f1;
+    color: #111;
+}
+
+body.dark-mode .butaoProj:hover {
+    background-color: #cccccc;
+}
+
+body.dark-mode a {
+    color: #8ab4f8;
+}
+
+body.dark-mode .language-switch button,
+body.dark-mode .theme-switch button {
+    background-color: #2f2f2f;
+    color: #ffffff;
+}
+
+body.dark-mode .language-switch button:hover,
+body.dark-mode .theme-switch button:hover {
+    background-color: #444;
+}
+
+/* MODO CLARO */
+body.light-mode {
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .top-controls {
+        width: 100%;
+    }
+
+    .perfil {
+        flex-direction: column;
+    }
+
+    .texto-lado,
+    .texto-baixo {
+        font-size: 18px;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
 }

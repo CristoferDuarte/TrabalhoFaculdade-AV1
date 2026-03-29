@@ -13,49 +13,73 @@
         <div class="logo">Cristofer.dev</div>
 
         <nav class="menu">
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="portfolio.html">Portfólio</a>
-            <a href="novidades.html">Novidades</a>
-            <a href="contato.html">Contato</a>
+            <a href="index.html" data-pt="Início" data-en="Home">Início</a>
+            <a href="sobre.html" data-pt="Sobre" data-en="About">Sobre</a>
+            <a href="portfolio.html" data-pt="Portfólio" data-en="Portfolio">Portfólio</a>
+            <a href="novidades.html" data-pt="Novidades" data-en="News">Novidades</a>
+            <a href="contato.html" data-pt="Contato" data-en="Contact">Contato</a>
         </nav>
+
+        <div class="top-controls">
+            <div class="language-switch">
+                <button onclick="setLanguage('pt')">PT-BR</button>
+                <button onclick="setLanguage('en')">EN</button>
+            </div>
+
+            <div class="theme-switch">
+                <button onclick="setTheme('light')" data-pt="Claro" data-en="Light">Claro</button>
+                <button onclick="setTheme('dark')" data-pt="Escuro" data-en="Dark">Escuro</button>
+            </div>
+        </div>
     </header>
 
     <div class="container">
 
-        <h1 class="titulo">Sobre Mim</h1>
+        <h1 class="titulo" data-pt="Sobre Mim" data-en="About Me">Sobre Mim</h1>
 
-        <p class="descricao">
+        <p class="descricao"
+           data-pt="Sou estudante de Ciência da Computação apaixonado por tecnologia e desenvolvimento web e mobile. Busco constantemente evoluir minhas habilidades através de projetos práticos e estudos contínuos."
+           data-en="I am a Computer Science student passionate about technology and web and mobile development. I constantly seek to improve my skills through practical projects and continuous study.">
             Sou estudante de Ciência da Computação apaixonado por tecnologia e
             desenvolvimento web e mobile. Busco constantemente evoluir minhas
             habilidades através de projetos práticos e estudos contínuos.
         </p>
 
         <div class="curriculo">
-            <h2>Currículo</h2>
+            <h2 data-pt="Currículo" data-en="Resume">Currículo</h2>
 
             <div class="card">
-                <h3>Formação</h3>
-                <p>Ciência da Computação - Universidade Veiga de Almeida (UVA)</p>
+                <h3 data-pt="Formação" data-en="Education">Formação</h3>
+                <p data-pt="Ciência da Computação - Universidade Veiga de Almeida (UVA)"
+                   data-en="Computer Science - Veiga de Almeida University (UVA)">
+                    Ciência da Computação - Universidade Veiga de Almeida (UVA)
+                </p>
             </div>
 
             <div class="card">
-                <h3>Habilidades</h3>
-                <p>HTML, CSS, JavaScript, React Native e Node.js</p>
+                <h3 data-pt="Habilidades" data-en="Skills">Habilidades</h3>
+                <p data-pt="HTML, CSS, JavaScript, React Native e Node.js"
+                   data-en="HTML, CSS, JavaScript, React Native and Node.js">
+                    HTML, CSS, JavaScript, React Native e Node.js
+                </p>
             </div>
 
             <div class="card">
-                <h3>Objetivo</h3>
-                <p>Atuar como desenvolvedor e crescer profissionalmente na área de tecnologia.</p>
+                <h3 data-pt="Objetivo" data-en="Goal">Objetivo</h3>
+                <p data-pt="Atuar como desenvolvedor e crescer profissionalmente na área de tecnologia."
+                   data-en="To work as a developer and grow professionally in the technology field.">
+                    Atuar como desenvolvedor e crescer profissionalmente na área de tecnologia.
+                </p>
             </div>
         </div>
 
     </div>
 
-    <footer>
+    <footer data-pt="© 2026 - CristoferDuarte" data-en="© 2026 - CristoferDuarte">
         © 2026 - CristoferDuarte
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

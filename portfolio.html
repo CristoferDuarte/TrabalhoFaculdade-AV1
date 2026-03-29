@@ -13,58 +13,76 @@
         <div class="logo">Cristofer.dev</div>
 
         <nav class="menu">
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="portfolio.html">Portfólio</a>
-            <a href="novidades.html">Novidades</a>
-            <a href="contato.html">Contato</a>
+            <a href="index.html" data-pt="Início" data-en="Home">Início</a>
+            <a href="sobre.html" data-pt="Sobre" data-en="About">Sobre</a>
+            <a href="portfolio.html" data-pt="Portfólio" data-en="Portfolio">Portfólio</a>
+            <a href="novidades.html" data-pt="Novidades" data-en="News">Novidades</a>
+            <a href="contato.html" data-pt="Contato" data-en="Contact">Contato</a>
         </nav>
+
+        <div class="top-controls">
+            <div class="language-switch">
+                <button onclick="setLanguage('pt')">PT-BR</button>
+                <button onclick="setLanguage('en')">EN</button>
+            </div>
+
+            <div class="theme-switch">
+                <button onclick="setTheme('light')" data-pt="Claro" data-en="Light">Claro</button>
+                <button onclick="setTheme('dark')" data-pt="Escuro" data-en="Dark">Escuro</button>
+            </div>
+        </div>
     </header>
 
     <div class="container">
 
-        <h1 class="titulo">Portfólio e Projetos</h1>
+        <h1 class="titulo" data-pt="Portfólio e Projetos" data-en="Portfolio and Projects">Portfólio e Projetos</h1>
 
-        <p class="descricao">
+        <p class="descricao"
+           data-pt="Nesta página apresento alguns projetos desenvolvidos durante meus estudos, com foco em prática, aprendizado e evolução na área de tecnologia."
+           data-en="On this page I present some projects developed during my studies, focused on practice, learning, and growth in the technology field.">
             Nesta página apresento alguns projetos desenvolvidos durante meus estudos,
             com foco em prática, aprendizado e evolução na área de tecnologia.
         </p>
 
         <div class="curriculo">
             <div class="card">
-                <h3>Aplicativo Mobile</h3>
-                <p>
+                <h3 data-pt="Aplicativo Mobile" data-en="Mobile Application">Aplicativo Mobile</h3>
+                <p data-pt="Projeto desenvolvido com React Native, voltado para praticar navegação, componentes e integração de funcionalidades em aplicações mobile."
+                   data-en="Project developed with React Native, focused on practicing navigation, components, and feature integration in mobile applications.">
                     Projeto desenvolvido com React Native, voltado para praticar navegação,
                     componentes e integração de funcionalidades em aplicações mobile.
                 </p>
-                <a href="" target="_blank" class="butaoProj">Ver Projeto</a>
-            </div>
-
-            <div class="card">  
-                <h3>Site em HTML, CSS e JavaScript</h3>
-                <p>
-                    Desenvolvimento de páginas web responsivas com foco em estrutura,
-                    estilização e interatividade, aplicando conhecimentos de front-end.
-                </p>
-                <a href="https://github.com/CristoferDuarte/SiteSilcortinas-3" target="_blank" class="butaoProj">Ver Projeto</a>
+                <a href="" target="_blank" class="butaoProj" data-pt="Ver Projeto" data-en="View Project">Ver Projeto</a>
             </div>
 
             <div class="card">
-                <h3>Projeto Back-end com Node.js</h3>
-                <p>
+                <h3 data-pt="Site em HTML, CSS e JavaScript" data-en="Website in HTML, CSS and JavaScript">Site em HTML, CSS e JavaScript</h3>
+                <p data-pt="Desenvolvimento de páginas web responsivas com foco em estrutura, estilização e interatividade, aplicando conhecimentos de front-end."
+                   data-en="Development of responsive web pages focused on structure, styling, and interactivity, applying front-end knowledge.">
+                    Desenvolvimento de páginas web responsivas com foco em estrutura,
+                    estilização e interatividade, aplicando conhecimentos de front-end.
+                </p>
+                <a href="https://github.com/CristoferDuarte/SiteSilcortinas-3" target="_blank" class="butaoProj" data-pt="Ver Projeto" data-en="View Project">Ver Projeto</a>
+            </div>
+
+            <div class="card">
+                <h3 data-pt="Projeto Back-end com Node.js" data-en="Back-end Project with Node.js">Projeto Back-end com Node.js</h3>
+                <p data-pt="Estudo e criação de aplicações back-end utilizando Node.js, explorando rotas, lógica de servidor e organização de código."
+                   data-en="Study and creation of back-end applications using Node.js, exploring routes, server logic, and code organization.">
                     Estudo e criação de aplicações back-end utilizando Node.js,
                     explorando rotas, lógica de servidor e organização de código.
                 </p>
-                <a href="" target="_blank" class="butaoProj">Ver Projeto</a>
+                <a href="" target="_blank" class="butaoProj" data-pt="Ver Projeto" data-en="View Project">Ver Projeto</a>
             </div>
         </div>
 
     </div>
 
-    <footer>
+    <footer data-pt="© 2026 - CristoferDuarte" data-en="© 2026 - CristoferDuarte">
         © 2026 - CristoferDuarte
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
